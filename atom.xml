@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yk1n0rt.github.io/"/>
-  <updated>2018-08-30T12:52:00.988Z</updated>
+  <updated>2018-08-31T13:36:28.617Z</updated>
   <id>https://yk1n0rt.github.io/</id>
   
   <author>
@@ -17,36 +17,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello</title>
-    <link href="https://yk1n0rt.github.io/2018/08/29/hello-world/"/>
-    <id>https://yk1n0rt.github.io/2018/08/29/hello-world/</id>
-    <published>2018-08-29T12:52:18.191Z</published>
-    <updated>2018-08-30T12:52:00.988Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-    
-      <category term="这里" scheme="https://yk1n0rt.github.io/tags/%E8%BF%99%E9%87%8C/"/>
-    
-  </entry>
-  
-  <entry>
     <title></title>
     <link href="https://yk1n0rt.github.io/2018/06/27/Untitled/"/>
     <id>https://yk1n0rt.github.io/2018/06/27/Untitled/</id>
     <published>2018-06-27T13:06:21.000Z</published>
-    <updated>2018-08-28T12:57:18.000Z</updated>
+    <updated>2018-08-31T13:36:28.617Z</updated>
     
-    <content type="html"><![CDATA[<ul><li style="list-style: none"><input type="checkbox"> 这里</li><li style="list-style: none"><input type="checkbox"> 哪里</li></ul><p>鼠鬚管說明書 <a href="https://github.com/rime/home/wiki/RimeWithSchemata" target="_blank" rel="noopener">https://github.com/rime/home/wiki/RimeWithSchemata</a></p><h1 id="记录surge试用"><a href="#记录surge试用" class="headerlink" title="记录surge试用"></a>记录surge试用</h1><p>FAKETIME_STOP_AFTER_SECONDS=10 faketime -f ‘@2018-08-27 01:00:00’ /Applications/SurgeG.app/Contents/MacOS/Surge &amp;</p><p>// Charles Proxy License</p><p>// 适用于Charles任意版本的注册码，谁还会想要使用破解版呢。</p><p>// Charles 4.2目前是最新版，可用。</p><p>Registered Name: <a href="https://zhile.io" target="_blank" rel="noopener">https://zhile.io</a></p><p>License Key: 48891cf209c6d32bf4</p>]]></content>
+    <content type="html"><![CDATA[<ul><li style="list-style: none"><input type="checkbox"> 这里</li><li style="list-style: none"><input type="checkbox"> 哪里</li></ul><p><img src="https://i.loli.net/2018/08/30/5b87f3a95041e.jpg" alt="2018-08-30 21.38.27.jpg"><br>鼠鬚管說明書 <a href="https://github.com/rime/home/wiki/RimeWithSchemata" target="_blank" rel="noopener">https://github.com/rime/home/wiki/RimeWithSchemata</a></p><p># </p>]]></content>
     
     <summary type="html">
     
@@ -56,11 +33,13 @@
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 这里&lt;/li&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 哪里&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;鼠鬚管說
+&lt;p&gt;&lt;img
       
     
     </summary>
     
+    
+      <category term="sm.ms rime 說明書" scheme="https://yk1n0rt.github.io/tags/sm-ms-rime-%E8%AA%AA%E6%98%8E%E6%9B%B8/"/>
     
   </entry>
   
