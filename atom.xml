@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yk1n0rt.github.io/"/>
-  <updated>2018-08-31T13:36:28.617Z</updated>
+  <updated>2018-08-31T13:45:02.948Z</updated>
   <id>https://yk1n0rt.github.io/</id>
   
   <author>
@@ -21,25 +21,23 @@
     <link href="https://yk1n0rt.github.io/2018/06/27/Untitled/"/>
     <id>https://yk1n0rt.github.io/2018/06/27/Untitled/</id>
     <published>2018-06-27T13:06:21.000Z</published>
-    <updated>2018-08-31T13:36:28.617Z</updated>
+    <updated>2018-08-31T13:45:02.948Z</updated>
     
-    <content type="html"><![CDATA[<ul><li style="list-style: none"><input type="checkbox"> 这里</li><li style="list-style: none"><input type="checkbox"> 哪里</li></ul><p><img src="https://i.loli.net/2018/08/30/5b87f3a95041e.jpg" alt="2018-08-30 21.38.27.jpg"><br>鼠鬚管說明書 <a href="https://github.com/rime/home/wiki/RimeWithSchemata" target="_blank" rel="noopener">https://github.com/rime/home/wiki/RimeWithSchemata</a></p><p># </p>]]></content>
+    <content type="html"><![CDATA[<h1 id="z這裏"><a href="#z這裏" class="headerlink" title="z這裏"></a>z這裏</h1><ul><li style="list-style: none"><input type="checkbox"> 这里</li><li style="list-style: none"><input type="checkbox"> 哪里</li></ul><p><img src="https://i.loli.net/2018/08/30/5b87f3a95041e.jpg" alt="2018-08-30 21.38.27.jpg"></p><h3 id="鼠鬚管說明書-https-github-com-rime-home-wiki-RimeWithSchemata"><a href="#鼠鬚管說明書-https-github-com-rime-home-wiki-RimeWithSchemata" class="headerlink" title="鼠鬚管說明書 https://github.com/rime/home/wiki/RimeWithSchemata"></a>鼠鬚管說明書 <a href="https://github.com/rime/home/wiki/RimeWithSchemata" target="_blank" rel="noopener">https://github.com/rime/home/wiki/RimeWithSchemata</a></h3><p># </p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;ul&gt;
+        &lt;h1 id=&quot;z這裏&quot;&gt;&lt;a href=&quot;#z這裏&quot; class=&quot;headerlink&quot; title=&quot;z這裏&quot;&gt;&lt;/a&gt;z這裏&lt;/h1&gt;&lt;ul&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 这里&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 哪里&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img
+&lt;li
       
     
     </summary>
     
     
-      <category term="sm.ms rime 說明書" scheme="https://yk1n0rt.github.io/tags/sm-ms-rime-%E8%AA%AA%E6%98%8E%E6%9B%B8/"/>
+      <category term="sm.ms rime說明書" scheme="https://yk1n0rt.github.io/tags/sm-ms-rime%E8%AA%AA%E6%98%8E%E6%9B%B8/"/>
     
   </entry>
   
