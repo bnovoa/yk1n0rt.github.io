@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yk1n0rt.github.io/"/>
-  <updated>2018-08-31T13:49:09.000Z</updated>
+  <updated>2018-09-01T13:34:02.000Z</updated>
   <id>https://yk1n0rt.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Navicat Premium for Mac 破解教程</title>
+    <link href="https://yk1n0rt.github.io/2018/09/01/Navicat%20Premium%20for%20Mac%20v12.0.22%E7%A0%B4%E8%A7%A3%E6%95%99%E7%A8%8B/"/>
+    <id>https://yk1n0rt.github.io/2018/09/01/Navicat Premium for Mac v12.0.22破解教程/</id>
+    <published>2018-08-31T16:00:00.000Z</published>
+    <updated>2018-09-01T13:34:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文僅以探討破解思路，請支持正版</p><h1 id="破解思路"><a href="#破解思路" class="headerlink" title="破解思路"></a>破解思路</h1><p>替換RSA加密算法公匙（Navicat Premium for Mac中的公匙位於程序包目錄的rpk文件中）</p><h1 id="生成自己的RSA公匙私匙對"><a href="#生成自己的RSA公匙私匙對" class="headerlink" title="生成自己的RSA公匙私匙對"></a>生成自己的RSA公匙私匙對</h1><p>使用open ssl工具生成，當然也可以使用其它工具（在線生成工具：<a href="http://web.chacuo.net/netrsakeypair）" target="_blank" rel="noopener">http://web.chacuo.net/netrsakeypair）</a> 生成，這裏需要注意的是<code>密匙是2048位，PKCS#8格式</code></p><h1 id="替換RSA公匙"><a href="#替換RSA公匙" class="headerlink" title="替換RSA公匙"></a>替換RSA公匙</h1><ul><li>版本12.0.24之前，公匙存儲在<strong>Navicat Premium.app/Contents/Resources/rpk</strong>，用文本編輯器打開它，替換上述生成的公匙</li><li>12.0.24之後，公匙不再存儲在<strong>Navicat Premium.app/Contents/Resources/rpk</strong>中，而是放在了Navicat的二進制執行文件<strong>Navicat Premium.app/Contents/MacOS/Navicat Premium</strong>中，通過搜索<code>-----BEGIN PUBLIC KEY-----</code>找到它<h1 id="算出有效的Mac版序列號密匙"><a href="#算出有效的Mac版序列號密匙" class="headerlink" title="算出有效的Mac版序列號密匙"></a>算出有效的Mac版序列號密匙</h1></li><li><p>序列號是一個16字節長度的字符串，是經過Base32編碼的，其實際存儲長度爲80位（8字節），輸入密匙後程序仍然會用Base33編碼，以二進制形式存儲比對。<br>正常的Base32編碼表順序是<br><code>char EncodeTable[]=‘ABCDEFGHIJKLMNOPQRSTUVWXYZ234567’</code><br>80位長的二進制數據，可轉換成爲10個十六進制，如<br>第壹個8位二進制數據：68 /原作者表示不知是什麼，但不能改變；<br>第貳個8位二進制數據：2A /原作者表示不知是什麼，但不能改變；<br>第叄個8位二進制數據：00 /原作者表示不知是什麼，但可任意改變；<br>第肆個8位二進制數據：00 /原作者表示不知是什麼，但可任意改變；<br>第伍個8位二進制數據：00 /原作者表示不知是什麼，但可任意改變；<br>第陸個8位二進制數據：AA /第陸個和第柒個組合使用；<br>第柒個8位二進制數據：99 /第陸個和第柒個組合使用，目前已知0xAC 0x88代表英文版，0xCE 0x32代表簡體中文版，0xAA 0x99代表繁體中文版，0xAD 0x82代表日本語，0xBB 0x55代表Polski，0xAE 0x10代表Español，0xFA 0x20代表Français，0xB1 0x60代表Deutsch，0xB5 0x60代表한국어，0xEE 0x16代表Русский，0xCD 0x49代表Português；<br>第捌個8位二進制數據：65 /代表商業許可類型，0x65代表企業版，0x66代表教育版，0x67代表精簡版；（以上數據爲Navicat12版本）<br>第玖個8位二進制數據：C0 /這個8位數據的前4位必須是1100，轉換爲十進制就是12，代表版本12，數據的後4位不知道代表什麼，但是可以延遲激活使用時間，後4位可以是0000或0001；（以上數據爲Navicat12版本）<br>第拾個8位二進制數據：FF /代表許可的期限權利類型，0xFB代表30天不可轉售許可，0xFC代表90天不可轉售許可，0xFD代表365天不可轉售許可，0xFE代表不可轉售許可，0xFF代表站點許可；<br>如此，得到繁體中文版密匙的原始數據：<code>68 2A 00 00 00 AA 99 65 C0 FF</code></p></li><li><p>對密匙後8個8位數據進行DES對稱加密，使用DES加密算法，並採用ECB模式。這裏，需要加密的是爲<code>00 00 00 AA 99 65 C0 FF</code>，DES加密密匙是<code>unsigned char DESKey = { 0x64, 0xAD, 0xF3, 0x2F, 0xAE, 0xF2, 0x1A, 0x27 }</code>，計算得出加密後的序列號密匙數據，並將原始數據轉化爲二進制，按每5位一組，進行Base32編碼，轉爲十進制，按找Base32編碼表，便能得到了相應版本的密匙。</p><h1 id="解密激活請求碼，生成激活碼"><a href="#解密激活請求碼，生成激活碼" class="headerlink" title="解密激活請求碼，生成激活碼"></a>解密激活請求碼，生成激活碼</h1></li><li>啓動程序後，提示註冊，<strong>斷開網路，阻止程序聯網</strong>，然後點擊註冊</li><li>根據提示，點擊手動激活，彈出離線激活請求，得到了程序給處的請求碼（這是一個Base64編碼的字符串，代表的是長度爲256字節的數據，這是離線激活請求信息被激活公匙加密的密文</li><li>經過RSA配對的私匙解密後，能得到激活請求信息（json風格）<br><code>{  “K“: “xxxxxxxxxxxxxxxx”，  “P”: “Mac 10.13”，  “DI”: “xxxxxxxxxxxxxxxxxxxx”}</code>這裏包含了3個key：“K”、“DI”、“P”，分別代表序列號、設備識別碼（與電腦硬件信息相關）和平臺（操作系統類型）</li><li>仍然通過RSA配對的私匙，使用上述的“K”和“DI”信息的json風格<br><code>{  “DI” : “xxxxxxxxxxxxxxxxxxxx”,  “T” : “1535808471.925012”,  “K” : “xxxxxxxxxxxxxxxx”,  “N” : “DoubleLabyrinth”,  “O” : “Shadow”}</code>這裏包含了5個key：“K”、“DI”、“N”、“T” 、“O”，分別代表序列號、設備識別碼（與電腦硬件信息相關）、註冊名、授權時間、組織。<strong>其中“T”是必須的，且代表的時間必須位於當前時間-1~+4天之內，採用的是unix時間戳</strong></li><li>輸入得到的離線激活回覆信息，激活完畢。</li></ul><p>參考鏈接：<br><a href="https://www.52pojie.cn/thread-688820-1-1.html" target="_blank" rel="noopener">https://www.52pojie.cn/thread-688820-1-1.html</a><br><a href="https://github.com/DoubleLabyrinth/navicat-keygen.git" target="_blank" rel="noopener">https://github.com/DoubleLabyrinth/navicat-keygen.git</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;本文僅以探討破解思路，請支持正版&lt;/p&gt;
+&lt;h1 id=&quot;破解思路&quot;&gt;&lt;a href=&quot;#破解思路&quot; class=&quot;headerlink&quot; title=&quot;破解思路&quot;&gt;&lt;/a&gt;破解思路&lt;/h1&gt;&lt;p&gt;替換RSA加密算法公匙（Navicat Premium for Mac中的公
+      
+    
+    </summary>
+    
+    
+      <category term="Navicat" scheme="https://yk1n0rt.github.io/tags/Navicat/"/>
+    
+  </entry>
   
   <entry>
     <title></title>
