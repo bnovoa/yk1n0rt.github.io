@@ -2,12 +2,23 @@
 <search>
   <entry>
     <title><![CDATA[大道至簡Hexo]]></title>
-    <url>%2F2018%2F09%2F04%2F%E5%A4%A7%E9%81%93%E8%87%B3%E7%B0%A1Hexo%2F</url>
+    <url>%2F2018%2F09%2F03%2F%E5%A4%A7%E9%81%93%E8%87%B3%E7%B0%A1Hexo%2F</url>
     <content type="text"><![CDATA[鼠鬚管說明書 https://github.com/rime/home/wiki/RimeWithSchemata]]></content>
       <tags>
         <tag>Hexo</tag>
         <tag>Blog</tag>
         <tag>大道</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[surge 2.5.3無限期試用教程]]></title>
+    <url>%2F2018%2F09%2F02%2Fsurge%202.5.3%E7%84%A1%E9%99%90%E6%9C%9F%E8%A9%A6%E7%94%A8%E6%95%99%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[本文僅以探討 libfaketime的功能，請在surge試用期到期後，購買正版或卸載。 介紹根據README文檔的描述，libfaketime攔截程序用於檢索系統當前日期和時間的各種系統調用，然後將修改（或是僞造）的日期和時間（由用戶自身指定）報告給這些程序，它允許修改程序看到的系統時間，而不需要在系統時間處更改時間，從而不影響其它應用對本地時間的調用。以下內容來自直接拷貝於 libfaketime，詳細瞭解，請跳轉鏈接。123456789101112131415161718192021222324252627282、 Compatibility issues------------------------ libfaketime is supposed to work on Linux and macOS. Your mileage may vary; some other *NIXes have been reported to work as well.- libfaketime uses the library preload mechanism of your operating system&apos;s linker (which is involved in starting programs) and thus cannot work with statically linked binaries or binaries that have the setuid-flag set (e.g., suidroot programs like &quot;ping&quot; or &quot;passwd&quot;). Please see you system linker&apos;s manpage for further details.- libfaketime supports the pthreads environment. A separate library is built (libfaketimeMT.so.1), which contains the pthread synchronization calls. This library also single-threads calls through the time() intercept because several variables are statically cached by the library and could cause issues when accessed without synchronization. However, the performance penalty for this might be an issue for some applications. If this is the case, you can try using an unsynchronized time() intercept by removing the -DPTHREAD_SINGLETHREADED_TIME from the Makefile and rebuilding libfaketimeMT.so.1* Java-/JVM-based applications work but you need to pass in an extra argument (DONT_FAKE_MONOTONIC). See usage basics below for details. Without this argument the java command usually hangs.* libfaketime will eventually be bypassed by applications that dynamically load system libraries, such as librt, explicitly themselves instead of relying on the linker to do so at application start time. libfaketime will not work with those applications unless you can modify them.* Applications can explicitly be designed to prevent libfaketime from working, e.g., by checking whether certain environment variables are set or whether libfaketime-specific files are present. 對surge的應用安裝libfaketime1、安裝HomebrewMac下直接在終端下輸入下述命令1ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot; Homebrew安裝成功後，可通過brew -v顯示Homebrew的版本號2、Homebrew的基本操作 安裝軟件：brew install &lt;軟件&gt; 搜索軟件：brew search &lt;軟件&gt; 卸載軟件：brew uninstall &lt;軟件&gt;3 、安裝libfaketime通過終端安裝libfaketime和coreutils（由於依賴GNU時間，需要安裝coreutils），輸入下述命令1brew install libfaketime coreutils 安裝成功後，可在終端輸入faketime來查看libfaketime是否安裝成功。 修改Surge調用的系統時間直接通過faketime來運行Surge，並且爲程序單獨僞造系統時間2018年9月1日。1faketime &apos;2018-09-01 00:00:00&apos; /Applications/Surge.app/Contents/MacOS/Surge &amp; 如此，便能看到Surge成功以2018年9月1日的時間運行。 其它說明的問題 此方法僅用於Surge2.5.3之前的各個版本的試用測試 若系統上已安裝過新版本或提示“試用期已過，請重新授權”之類的話，此方法無效 libfaketime可能會佔用大量CPU資源，可嘗試添加FAKETIME_STOP_AFTER_SECONDS=10(在程序啓動後10秒後，自動關閉libfaketime進程） 關閉libfaketime進程後，Surge的配置選項中，會顯示剩餘負數天數 參考鏈接中，更是給出了通過配合Alfred的Workflow的效果，本文不作討論libfaketime亦可對Docker的具體應用做僞造系統時間 參考鏈接：子與孟子曰]]></content>
+      <tags>
+        <tag>surge</tag>
+        <tag>libfaketime</tag>
+        <tag>試用</tag>
+        <tag>Homebrew</tag>
       </tags>
   </entry>
   <entry>
@@ -18,16 +29,6 @@
         <tag>Navicat</tag>
         <tag>加密與解密</tag>
         <tag>unix</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[surge 2.5.3無限期試用教程]]></title>
-    <url>%2F2018%2F08%2F31%2Fsurge%202.5.3%E7%84%A1%E9%99%90%E6%9C%9F%E8%A9%A6%E7%94%A8%E6%95%99%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[本文僅以探討 libfaketime的功能，請在surge試用期到期後，購買正版或卸載。 參考鏈接：子與孟子曰]]></content>
-      <tags>
-        <tag>surge</tag>
-        <tag>libfaketime</tag>
-        <tag>試用</tag>
       </tags>
   </entry>
 </search>

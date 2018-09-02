@@ -108,13 +108,16 @@
 
 
 
-  <meta property="og:type" content="website">
+  <meta name="description" content="U+9918">
+<meta property="og:type" content="website">
 <meta property="og:title" content="餘">
 <meta property="og:url" content="https://yk1n0rt.github.io/index.html">
 <meta property="og:site_name" content="餘">
+<meta property="og:description" content="U+9918">
 <meta property="og:locale" content="zh-TW">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="餘">
+<meta name="twitter:description" content="U+9918">
 
 
 
@@ -196,6 +199,10 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
+      
+        <p class="site-subtitle">三餘讀書</p>
+      
     
   </div>
 
@@ -326,11 +333,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yk1n0rt.github.io/2018/09/04/大道至簡Hexo/">
+    <link itemprop="mainEntityOfPage" href="https://yk1n0rt.github.io/2018/09/03/大道至簡Hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="yk1n0rt">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="U+9918">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -345,7 +352,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/09/04/大道至簡Hexo/" itemprop="url">
+                <a class="post-title-link" href="/2018/09/03/大道至簡Hexo/" itemprop="url">
                   大道至簡Hexo
                 </a>
               
@@ -372,7 +379,7 @@
                 
               
 
-              <time title="創建時間：2018-09-04 00:00:00" itemprop="dateCreated datePublished" datetime="2018-09-04T00:00:00+08:00">2018-09-04</time>
+              <time title="創建時間：2018-09-03 00:00:00" itemprop="dateCreated datePublished" datetime="2018-09-03T00:00:00+08:00">2018-09-03</time>
             
 
             
@@ -389,7 +396,7 @@
                 
                   <span class="post-meta-item-text">更新於</span>
                 
-                <time title="修改時間：2018-09-02 21:38:51" itemprop="dateModified" datetime="2018-09-02T21:38:51+08:00">2018-09-02</time>
+                <time title="修改時間：2018-09-02 22:41:51" itemprop="dateModified" datetime="2018-09-02T22:41:51+08:00">2018-09-02</time>
               
             
           </span>
@@ -480,11 +487,173 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yk1n0rt.github.io/2018/09/02/surge 2.5.3無限期試用教程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yk1n0rt">
+      <meta itemprop="description" content="U+9918">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="餘">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/02/surge 2.5.3無限期試用教程/" itemprop="url">
+                  surge 2.5.3無限期試用教程
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">發表於</span>
+              
+
+              
+                
+              
+
+              <time title="創建時間：2018-09-02 00:00:00 / 修改時間：23:28:53" itemprop="dateCreated datePublished" datetime="2018-09-02T00:00:00+08:00">2018-09-02</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>本文僅以探討 <strong><a href="https://github.com/wolfcw/libfaketime" target="_blank" rel="noopener">libfaketime</a></strong>的功能，請在surge試用期到期後，購買正版或卸載。</p>
+<h1 id="介紹"><a href="#介紹" class="headerlink" title="介紹"></a>介紹</h1><p>根據README文檔的描述，libfaketime攔截程序用於檢索系統當前日期和時間的各種系統調用，然後將修改（或是僞造）的日期和時間（由用戶自身指定）報告給這些程序，它允許修改程序看到的系統時間，而不需要在系統時間處更改時間，從而不影響其它應用對本地時間的調用。<br>以下內容來自直接拷貝於 <strong><a href="https://github.com/wolfcw/libfaketime" target="_blank" rel="noopener">libfaketime</a></strong>，詳細瞭解，請跳轉鏈接。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">2、 Compatibility issues</span><br><span class="line">-----------------------</span><br><span class="line">- libfaketime is supposed to work on Linux and macOS.</span><br><span class="line">  Your mileage may vary; some other *NIXes have been reported to work as well.</span><br><span class="line">- libfaketime uses the library preload mechanism of your operating system&apos;s</span><br><span class="line">  linker (which is involved in starting programs) and thus cannot work with</span><br><span class="line">  statically linked binaries or binaries that have the setuid-flag set (e.g.,</span><br><span class="line">  suidroot programs like &quot;ping&quot; or &quot;passwd&quot;). Please see you system linker&apos;s</span><br><span class="line">  manpage for further details.</span><br><span class="line">- libfaketime supports the pthreads environment. A separate library is built</span><br><span class="line">  (libfaketimeMT.so.1), which contains the pthread synchronization calls. This</span><br><span class="line">  library also single-threads calls through the time() intercept because</span><br><span class="line">  several variables are statically cached by the library and could cause issues</span><br><span class="line">  when accessed without synchronization.</span><br><span class="line">  However, the performance penalty for this might be an issue for some</span><br><span class="line">  applications. If this is the case, you can try using an unsynchronized time()</span><br><span class="line">  intercept by removing the -DPTHREAD_SINGLETHREADED_TIME from the Makefile and</span><br><span class="line">  rebuilding libfaketimeMT.so.1</span><br><span class="line">* Java-/JVM-based applications work but you need to pass in an extra argument</span><br><span class="line">  (DONT_FAKE_MONOTONIC).  See usage basics below for details.  Without this</span><br><span class="line">  argument the java command usually hangs.</span><br><span class="line">* libfaketime will eventually be bypassed by applications that dynamically load</span><br><span class="line">  system libraries, such as librt, explicitly themselves instead of relying on</span><br><span class="line">  the linker to do so at application start time. libfaketime will not work with</span><br><span class="line">  those applications unless you can modify them.</span><br><span class="line">* Applications can explicitly be designed to prevent libfaketime from working,</span><br><span class="line">  e.g., by checking whether certain environment variables are set or whether</span><br><span class="line">  libfaketime-specific files are present.</span><br></pre></td></tr></table></figure></p>
+<h1 id="對surge的應用"><a href="#對surge的應用" class="headerlink" title="對surge的應用"></a>對surge的應用</h1><h2 id="安裝libfaketime"><a href="#安裝libfaketime" class="headerlink" title="安裝libfaketime"></a>安裝libfaketime</h2><p>1、安裝Homebrew<br>Mac下直接在終端下輸入下述命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span><br></pre></td></tr></table></figure></p>
+<p>Homebrew安裝成功後，可通過<strong>brew -v</strong>顯示Homebrew的版本號<br>2、Homebrew的基本操作</p>
+<ul>
+<li>安裝軟件：brew install &lt;軟件&gt;</li>
+<li>搜索軟件：brew search &lt;軟件&gt;</li>
+<li>卸載軟件：brew uninstall &lt;軟件&gt;<br>3 、安裝libfaketime<br>通過終端安裝libfaketime和coreutils（由於依賴GNU時間，需要安裝coreutils），輸入下述命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install libfaketime coreutils</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>安裝成功後，可在終端輸入<strong>faketime</strong>來查看libfaketime是否安裝成功。</p>
+<h2 id="修改Surge調用的系統時間"><a href="#修改Surge調用的系統時間" class="headerlink" title="修改Surge調用的系統時間"></a>修改Surge調用的系統時間</h2><p>直接通過faketime來運行Surge，並且爲程序單獨僞造系統時間2018年9月1日。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">faketime &apos;2018-09-01 00:00:00&apos; /Applications/Surge.app/Contents/MacOS/Surge &amp;</span><br></pre></td></tr></table></figure></p>
+<p>如此，便能看到Surge成功以2018年9月1日的時間運行。</p>
+<h2 id="其它說明的問題"><a href="#其它說明的問題" class="headerlink" title="其它說明的問題"></a>其它說明的問題</h2><ul>
+<li>此方法僅用於Surge2.5.3之前的各個版本的試用測試</li>
+<li>若系統上已安裝過新版本或提示“試用期已過，請重新授權”之類的話，此方法無效</li>
+<li>libfaketime可能會佔用大量CPU資源，可嘗試添加<strong>FAKETIME_STOP_AFTER_SECONDS=10</strong>(在程序啓動後10秒後，自動關閉libfaketime進程）</li>
+<li>關閉libfaketime進程後，Surge的配置選項中，會顯示剩餘負數天數</li>
+<li>參考鏈接中，更是給出了通過配合Alfred的Workflow的效果，本文不作討論<h1 id="libfaketime亦可對Docker的具體應用做僞造系統時間"><a href="#libfaketime亦可對Docker的具體應用做僞造系統時間" class="headerlink" title="libfaketime亦可對Docker的具體應用做僞造系統時間"></a>libfaketime亦可對Docker的具體應用做僞造系統時間</h1></li>
+</ul>
+<p>參考鏈接：<a href="https://www.daletan.win/2017/10/27/surge-for-mac-trial-crack/" target="_blank" rel="noopener">子與孟子曰</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+    <div>
+      
+    </div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://yk1n0rt.github.io/2018/09/01/Navicat Premium for Mac破解教程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="yk1n0rt">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="U+9918">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -633,161 +802,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yk1n0rt.github.io/2018/08/31/surge 2.5.3無限期試用教程/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yk1n0rt">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="餘">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/31/surge 2.5.3無限期試用教程/" itemprop="url">
-                  surge 2.5.3無限期試用教程
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">發表於</span>
-              
-
-              
-                
-              
-
-              <time title="創建時間：2018-08-31 00:00:00" itemprop="dateCreated datePublished" datetime="2018-08-31T00:00:00+08:00">2018-08-31</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新於</span>
-                
-                <time title="修改時間：2018-09-01 22:21:09" itemprop="dateModified" datetime="2018-09-01T22:21:09+08:00">2018-09-01</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>本文僅以探討 <strong><a href="https://github.com/wolfcw/libfaketime" target="_blank" rel="noopener">libfaketime</a></strong>的功能，請在surge試用期到期後，購買正版或卸載。</p>
-<p>參考鏈接：<a href="https://www.daletan.win/2017/10/27/surge-for-mac-trial-crack/" target="_blank" rel="noopener">子與孟子曰</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-    <div>
-      
-    </div>
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -821,7 +835,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">yk1n0rt</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">U+9918</p>
           </div>
 
           
@@ -864,7 +878,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">9</span>
+                      
+                    
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">標籤</span>
                   </a>
                 </div>
@@ -940,7 +956,7 @@
 -->
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共1.2k字</span>
+  <span class="post-count">博客全站共2.0k字</span>
 </div>
         
 
