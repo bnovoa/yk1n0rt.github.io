@@ -108,16 +108,16 @@
 
 
 
-  <meta name="description" content="U+9918">
+  <meta name="description" content="讀書三餘">
 <meta property="og:type" content="website">
 <meta property="og:title" content="餘">
 <meta property="og:url" content="https://yk1n0rt.github.io/index.html">
 <meta property="og:site_name" content="餘">
-<meta property="og:description" content="U+9918">
+<meta property="og:description" content="讀書三餘">
 <meta property="og:locale" content="zh-TW">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="餘">
-<meta name="twitter:description" content="U+9918">
+<meta name="twitter:description" content="讀書三餘">
 
 
 
@@ -337,7 +337,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="yk1n0rt">
-      <meta itemprop="description" content="U+9918">
+      <meta itemprop="description" content="讀書三餘">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -383,22 +383,6 @@
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新於</span>
-                
-                <time title="修改時間：2018-09-02 22:41:51" itemprop="dateModified" datetime="2018-09-02T22:41:51+08:00">2018-09-02</time>
-              
-            
           </span>
 
           
@@ -431,8 +415,52 @@
       
         
           
-            <p><img src="https://i.loli.net/2018/08/30/5b87f3a95041e.jpg" alt="2018-08-30 21.38.27.jpg"></p>
-<h3 id="鼠鬚管說明書-https-github-com-rime-home-wiki-RimeWithSchemata"><a href="#鼠鬚管說明書-https-github-com-rime-home-wiki-RimeWithSchemata" class="headerlink" title="鼠鬚管說明書 https://github.com/rime/home/wiki/RimeWithSchemata"></a>鼠鬚管說明書 <a href="https://github.com/rime/home/wiki/RimeWithSchemata" target="_blank" rel="noopener">https://github.com/rime/home/wiki/RimeWithSchemata</a></h3>
+            <h1 id="大道至簡Hexo"><a href="#大道至簡Hexo" class="headerlink" title="大道至簡Hexo"></a>大道至簡Hexo</h1><p>Hexo 是一個由<a href="http://nodejs.org/" target="_blank" rel="noopener">Node.js</a>構建的快速、簡單且強大的網誌框架。</p>
+<h1 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h1><h2 id="安裝環境"><a href="#安裝環境" class="headerlink" title="安裝環境"></a>安裝環境</h2><p>Mac用戶在編譯時可能會碰到問題，請先至 App Store 安裝 Xcode，一旦 Xcode 安裝完成後，開啟它並前往 <strong>Preferences -&gt; Download -&gt; Command Line Tools -&gt; Install</strong> 安裝命令列工具。</p>
+<h3 id="安裝Node-js"><a href="#安裝Node-js" class="headerlink" title="安裝Node.js"></a>安裝Node.js</h3><p>既然是由Node.js構建的網志框架，那必可不少的環境之一肯定是<a href="http://nodejs.org/" target="_blank" rel="noopener">Node.js</a>。這裏通過安裝包一鍵安裝，亦可通過本地編譯完成安裝。<br>安裝 Node.js 的最佳方式是透過 <a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">Node Version Manager</a>。感謝 nvm 的開發者提供簡易自動安裝的腳本指令：<br>cURL:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash</span><br></pre></td></tr></table></figure></p>
+<p>Wget:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash</span><br></pre></td></tr></table></figure></p>
+<p>一旦安裝完成，重啟終端機並執行下列指令以安裝 Node.js。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install stable</span><br></pre></td></tr></table></figure></p>
+<h3 id="安裝Git"><a href="#安裝Git" class="headerlink" title="安裝Git"></a>安裝Git</h3><p>安裝Git的最佳方式是透過<a href="https://mxcl.github.com/homebrew/" target="_blank" rel="noopener">Homebrew</a>安裝。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure></p>
+<h3 id="安裝Hexo"><a href="#安裝Hexo" class="headerlink" title="安裝Hexo"></a>安裝Hexo</h3><p>在終端下執行下列指令以安裝Hexo。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
+<p>截至目前，便完成了Hexo的基本安裝。</p>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>配置內容，比較複雜，供參考學習的資料網路上也是非常的多，但還是推薦也通讀一遍<a href="https://hexo.io/zh-tw/docs/" target="_blank" rel="noopener">Hexo官方文檔</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
+<p>如此網誌便已完成建立，在<folder>中會出現以下目錄</folder></p>
+<ul>
+<li>_config.yml /<em>網站的配置文檔 </em>/</li>
+<li>package.json /<em>nodejs的安裝包目錄 </em>/</li>
+<li>scaffolds /<em>當您建立新文章時，Hexo 會根據 scaffold 來建立檔案</em>/</li>
+<li>source /<em>原始檔案資料夾，放置檔案內容</em>/<ul>
+<li>_drafts</li>
+<li>_posts</li>
+<li>themes /<em>主題資料夾</em>/<h1 id="應用"><a href="#應用" class="headerlink" title="應用"></a>應用</h1><h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2></li>
+</ul>
+</li>
+<li>init<br><code>$ hexo init [folder]</code><br>建立一個新的網站。如果沒有設定 folder 的話，Hexo 會在目前的資料夾建立網站。</li>
+<li>new<br><code>$ hexo new [layout] &lt;title&gt;</code><br>建立一篇新的文章。如果沒有設定 layout 的話，則會使用 _config.yml 中的 default_layout 設定代替。如果標題包含空格的話，請使用引號括起來。</li>
+<li>generate<br><code>$ hexo generate</code><br>產生靜態檔案。<br>-d, –deploy    產生完成即部署網站<br>-w, –watch    監看檔案變更</li>
+<li>publish<br><code>$ hexo publish [layout] &lt;filename&gt;</code><br>發表草稿。</li>
+<li>server<br><code>$ hexo server</code><br>啟動伺服器，預設是 <a href="http://localhost:4000/。" target="_blank" rel="noopener">http://localhost:4000/。</a><br>-p, –port    覆蓋連接埠設定<br>-s, –static    只使用靜態檔案<br>-l, –log    啟動記錄器，或覆蓋記錄格式</li>
+<li>deploy<br><code>$ hexo deploy</code><br>部署網站。<br>-g, –generate    部署網站前先產生靜態檔案</li>
+<li>render<br><code>$ hexo render &lt;file&gt; [file2] ...</code><br>渲染檔案。<br>-o, –output    輸出位置</li>
+<li>migrate<br><code>$ hexo migrate &lt;type&gt;</code><br>從其他系統 轉移內容。</li>
+<li>clean<br><code>$ hexo clean</code><br>清除快取檔案 (db.json) 和已產生的靜態檔案 (public)。</li>
+<li>list<br><code>$ hexo list &lt;type&gt;</code><br>列出網站資料。</li>
+<li><p>version<br><code>$ hexo version</code><br>顯示版本資訊。</p>
+<ul>
+<li>安全模式<code>hexo --safe</code><pre><code>在安全模式下，不會載入外掛和腳本。當您在安裝新外掛後遭遇問題時，可以嘗試以安全模式重新執行。
+</code></pre></li>
+<li>除錯模式<code>hexo --debug</code><pre><code>在終端機中顯示除錯訊息並儲存記錄檔到 debug.log。當您碰到問題時，試著以除錯模式重新執行一次，並 把除錯訊息貼到 GitHub。
+</code></pre><ul>
+<li>安靜模式<code>hexo --silent</code><br>   隱藏終端機的訊息。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>自訂配置檔的路徑<br><code>$ hexo --config custom.yml</code><br>自訂配置檔的路徑而不是使用 _config.yml。此參數也接受以逗號分隔的 JSON 或 YAML 檔列表字串 (不得含有空格)，它們將會被合併產生一個 _multiconfig.yml。<br><code>$ hexo --config custom.yml,custom2.json</code><br>顯示草稿<br><code>$ hexo --draft</code><br>顯示 source/_drafts 資料夾中的草稿文章。<br>自定 CWD<br><code>$ hexo --cwd /path/to/cwd</code><br>自訂目前工作目錄（Current working directory）的路徑。 </p>
+</li>
+</ul>
+<p>立個flag：<strong>9月底完成對hexo的詳細剖析</strong></p>
+
           
         
       
@@ -491,7 +519,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="yk1n0rt">
-      <meta itemprop="description" content="U+9918">
+      <meta itemprop="description" content="讀書三餘">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -653,7 +681,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="yk1n0rt">
-      <meta itemprop="description" content="U+9918">
+      <meta itemprop="description" content="讀書三餘">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -835,7 +863,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">yk1n0rt</p>
-              <p class="site-description motion-element" itemprop="description">U+9918</p>
+              <p class="site-description motion-element" itemprop="description">讀書三餘</p>
           </div>
 
           
@@ -880,7 +908,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">10</span>
+                      
+                    
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">標籤</span>
                   </a>
                 </div>
@@ -956,7 +986,7 @@
 -->
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共2.0k字</span>
+  <span class="post-count">博客全站共2.9k字</span>
 </div>
         
 
